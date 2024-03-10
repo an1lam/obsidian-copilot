@@ -220,7 +220,7 @@ export default class CopilotPlugin extends Plugin {
 				let pastContent = '';
 				for (let i = 0; i < 7; i++) {
 					const dateStr = date.toISOString().slice(0, 10);
-					const dailyNote = this.app.vault.getAbstractFileByPath(`daily/${dateStr}.md`);
+					const dailyNote = this.app.vault.getAbstractFileByPath(`Daily/${dateStr}.md`);
 					console.log(`dateStr: ${dateStr}, dailyNote: ${dailyNote}`);
 					if (dailyNote && dailyNote instanceof TFile) {
 						const noteContent = await this.app.vault.read(dailyNote);
