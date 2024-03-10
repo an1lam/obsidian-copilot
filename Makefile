@@ -68,8 +68,8 @@ else
 endif
 
 install-plugin:
-	mkdir -p ${OBSIDIAN_PATH}.obsidian/plugins/copilot/
-	cp plugin/main.ts plugin/main.js plugin/styles.css plugin/manifest.json ${OBSIDIAN_PATH}.obsidian/plugins/copilot/
+	mkdir -p ${OBSIDIAN_PATH}/.obsidian/plugins/copilot/
+	cp plugin/main.ts plugin/main.js plugin/styles.css plugin/manifest.json ${OBSIDIAN_PATH}/.obsidian/plugins/copilot/
 
 # Development
 dev: build
